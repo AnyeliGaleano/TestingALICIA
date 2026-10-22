@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - ALICIA</title>
+
+    <!-- Favicon para la pestaña -->
+    <link rel="icon" type="image/png" href="../static/img/logo02.png">
+
+    <link rel="stylesheet" href="../static/style/registro.css">
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="login-container">
+    
+    <!-- Lado Izquierdo (Panel Azul) -->
+    <section class="left-panel register-panel">
+        <div class="brand">
+        <img src="../static/img/logo01.png" alt="Logo ALICIA" class="brand-icon">
+        <span>ALICIA</span>
+        </div>
+
+        <!-- Tarjetas de características del lado izquierdo -->
+        <div class="features-list">
+        <div class="feature-card">
+            <div class="feature-icon">
+            <i data-lucide="zap"></i>
+            </div>
+            <div class="feature-text">
+            <h4>Aprendizaje socrático</h4>
+            <p>Tu tutor IA nunca te da el código. Te hace pensar.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+            <i data-lucide="users"></i>
+            </div>
+            <div class="feature-text">
+            <h4>Comunidad técnica</h4>
+            <p>Foro colaborativo con validación de instructores.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Lado Derecho (Formulario de Registro) -->
+    <section class="right-panel">
+        <div class="form-wrapper">
+        <h2>Crear cuenta</h2>
+        <p class="form-subtitle">Únete a ALICIA</p>
+
+        <form action="#" method="POST">
+            
+            <!-- Nombre Completo -->
+            <div class="input-group">
+            <label for="fullname">NOMBRE COMPLETO</label>
+            <div class="input-field">
+                <i data-lucide="user"></i>
+                <input type="text" id="fullname" placeholder="María García López" required>
+            </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="input-group">
+            <label for="phone">TELÉFONO</label>
+            <div class="input-field">
+                <i data-lucide="phone"></i>
+                <input type="tel" id="phone" placeholder="300 123 4567" required>
+            </div>
+            </div>
+
+            <!-- Correo -->
+            <div class="input-group">
+            <label for="email">CORREO ELECTRÓNICO</label>
+            <div class="input-field">
+                <i data-lucide="mail"></i>
+                <input type="email" id="email" placeholder="nombre@sena.edu.co" required>
+            </div>
+            </div>
+
+            <!-- Filas de Contraseña y Confirmar -->
+            <div class="input-row">
+            <div class="input-group">
+                <label for="password">CONTRASEÑA</label>
+                <div class="input-field">
+                <i data-lucide="lock"></i>
+                <input type="password" id="password" placeholder="********" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">CONFIRMAR</label>
+                <div class="input-field">
+                <i data-lucide="lock"></i>
+                <input type="password" id="confirm-password" placeholder="********" required>
+                </div>
+            </div>
+            </div>
+
+            <!-- Checkbox de Términos / Ley 1581 -->
+            <div class="terms-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">
+                Acepto el tratamiento de mis datos personales conforme a la <a href="#" target="_blank">Ley 1581 de 2012</a>.
+            </label>
+            </div>
+
+            <!-- Botón de Registro -->
+            <button type="submit" class="btn-submit">Crear mi cuenta</button>
+
+        </form>
+
+        <!-- Footer -->
+        <div class="form-footer">
+            <p>¿Ya tienes cuenta? <a href="../templates/inicioSesion.html">Inicia sesión</a></p>
+        </div>
+        </div>
+    </section>
+
+    </div>
+
+    <script>
+    lucide.createIcons();
+    </script>
+</body>
+</html>
